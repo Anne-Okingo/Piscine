@@ -1,2 +1,2 @@
 #!/bin/bash/
-ls -m -t -F | tr -d ""
+ls -m -t -F | tr -d " "

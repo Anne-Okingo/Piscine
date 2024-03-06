@@ -8,5 +8,4 @@ func Fibonacci(index int) int {
 	} else {
 		return Fibonacci(index-1) + Fibonacci(index-2)
 	}
-
 }

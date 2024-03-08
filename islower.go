@@ -8,5 +8,5 @@ func IsLower(s string) bool {
 			return false
 		}
 	}
-	return true
+	return false
 }

@@ -15,6 +15,7 @@ func PrintNbrInOrder(n int) {
 			if m%10 == testDigit {
 				counter++
 			}
+
 		}
 		for i := 0; i < counter; i++ {
 			z01.PrintRune(rune(testDigit + '0'))

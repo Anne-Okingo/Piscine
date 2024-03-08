@@ -3,7 +3,7 @@ package piscine
 func LastRune(s string) rune {
       runes := []rune(s)
       lens := 0
-      ro range runes {
+      for range runes {
         lens++
       }
   for index,value := range{

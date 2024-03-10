@@ -10,4 +10,3 @@ func AppendRange(min, max int) []int {
 	}
 	return result
 }
- 

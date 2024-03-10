@@ -1,14 +1,24 @@
 package piscine
 
 func SplitWhiteSpaces(s string) []string {
-	returnedArray := []string{}
-	startPoint := 0
-	for i := 0; i < len(s); i++ {
-		if s[i] == ' ' || s[i] == '\t' || s[i] == '\n' {
-			returnedArray = append(returnedArray, s[startPoint:i])
-			startPoint = i + 1
+	var words []string
+	var currentWord string
+
+	for _, char := range s {
+		switch char {
+		case ' ', '\t', '\n':
+			if currentWord != "" {
+				words = append(words, currentWord)
+				currentWord = ""
+			}
+		default:
+			currentWord += string(char)
 		}
 	}
-	returnedArray = append(returnedArray, s[startPoint:])
-	return returnedArray
+
+	if currentWord != "" {
+		words = append(words, currentWord)
+	}
+
+	return words
 }

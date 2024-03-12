@@ -26,6 +26,6 @@ func main() {
 	if isEven(args) {
 		printStr("I have an even number of arguments")
 	} else {
-		printStr("I have an odd number of argument")
+		printStr("I have an odd number of arguments")
 	}
 }

@@ -1,7 +1,7 @@
 package piscine
 
 func Rot14(s string) string {
-  result := string
+  result := ""
   
   for _, ch := range s {
     if ch >= 'A' && ch <= 'Z' {

@@ -13,7 +13,7 @@ func DescendComb() {
 						z01.PrintRune(' ')
 						z01.PrintRune(c)
 						z01.PrintRune(d)
-					} else if a == c || b > d || a > d {
+					} else if a == c || d > b || d > a {
 						z01.PrintRune(a)
 						z01.PrintRune(b)
 						z01.PrintRune(' ')

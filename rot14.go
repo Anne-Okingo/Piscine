@@ -7,7 +7,7 @@ func Rot14(s string) string {
     if ch >= 'A' && ch <= 'Z' {
       result = result + string('A' + (ch-'A'+14)%26)
     }else if ch >= 'a' && ch >= 'z' {
-      result = result + string('A' + (ch-'A'+14)%26)
+      result = result + string('a' + (ch-'a'+14)%26)
     }else {
       result = result + string(ch)
     }

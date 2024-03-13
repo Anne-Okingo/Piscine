@@ -5,11 +5,11 @@ func CollatzCountdown(start int) int {
 		return -1
 	}
 	steps := 0
-	for start != 1{
+	for start != 1 {
 		if start%2 != 0 {
-			start = start * 3 + 1
-		}else {
-			start = start/2
+			start = start*3 + 1
+		} else {
+			start = start / 2
 		}
 		steps++
 	}

@@ -8,5 +8,4 @@ func DealAPackOfCards(deck []int) {
 		fmt.Printf("Player %v: %v, %v, %v\n", j+1, deck[i], deck[i+1], deck[i+2])
 		i = i + 3
 	}
-
 }

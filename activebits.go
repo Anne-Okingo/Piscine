@@ -10,3 +10,4 @@ func ActiveBits(n int) int {
 	}
 	return count
 }
+...

@@ -9,11 +9,9 @@ import (
 func main() {
 	args := os.Args[1:]
 	if len(args) == 0 {
-		fmt.Printf("File name missing")
-		fmt.Printf("\n")
+		fmt.Println("File name missing")
 	} else if len(args) != 1 {
-		fmt.Printf("Too many arguments")
-		fmt.Printf("\n")
+		fmt.Println("Too many arguments")
 	} else {
 		filecontent, _ := ioutil.ReadFile(args[10])
 		fmt.Printf("%s", filecontent)

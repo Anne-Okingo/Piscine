@@ -1,11 +1,10 @@
 package piscine
 
 func StrRev(s string) string {
-	p := []rune(s)
-	var t []rune
-	length := len(p)
-	for i := length - 1; i >= 0; i-- {
-		t = append(t, p[i])
+	runes := []rune(s)
+	reversed := []rune{}
+	for i := len(runes); i >= 0; i-- {
+		reversed = append(reversed, runes[i])
 	}
-	return string(t)
+	return string(reversed)
 }

@@ -1,6 +1,8 @@
 package piscine
 
-import "github.com/01-edu/z01"
+import (
+	"github.com/01-edu/z01"
+)
 
 func DescendComb() {
 	for a := '9'; a >= '0'; a-- {
@@ -10,13 +12,13 @@ func DescendComb() {
 					if a == c && b == d {
 						continue
 					}
-					if (a > c) || (a == c && b > d) {
-						z01.PrintRune(a)
-						z01.PrintRune(b)
+					if a > c || (a == c && b > d) {
+						z01.PrintRune(rune(a))
+						z01.PrintRune(rune(b))
 						z01.PrintRune(' ')
-						z01.PrintRune(c)
-						z01.PrintRune(d)
-						if a != '0' || b != '1' || c != '0' || d != '0' {
+						z01.PrintRune(rune(c))
+						z01.PrintRune(rune(d))
+						if a != '0' || b != '0' || c != '0' || d != '0' {
 							z01.PrintRune(',')
 							z01.PrintRune(' ')
 						}

@@ -9,7 +9,7 @@ func IsPositiveNode(node *NodeL) bool {
 	}
 }
 
-func IsA1Node(node *NodeL) bool {
+func IsAlNode(node *NodeL) bool {
 	switch node.Data.(type) {
 	case int, float32, float64, byte:
 		return false

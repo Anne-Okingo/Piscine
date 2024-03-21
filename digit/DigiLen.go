@@ -15,11 +15,10 @@ func digiLen(n, base int) int {
 	for n > 0 {
 		n /= base
 		count++
-
 	}
-
 	return count
 }
+
 func main() {
 	k := digiLen(100, 2)
 	fmt.Println(k)

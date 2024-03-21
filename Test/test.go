@@ -5,7 +5,7 @@ import (
 	"piscine"
 )
 
-
 func main() {
-	fmt.Println(piscine.IterativePower(4, 3))
+	arg1 := 4
+	fmt.Println(piscine.Fibonacci(arg1))
 }

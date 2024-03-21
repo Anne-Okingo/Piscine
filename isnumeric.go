@@ -1,10 +1,10 @@
 package piscine
 
 func IsNumeric(s string) bool {
-	for _, r := range s {
-		if r >= '0' && r <= '9' {
+	for _, ch := range s {
+		if ch >= '0' && ch <= '9' {
 			continue
-		} else if (r >= 'a' && r <= 'z') || (r >= 'A' && r <= 'z') {
+		} else if (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z') {
 			return false
 		} else {
 			return false

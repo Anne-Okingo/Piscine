@@ -1,12 +1,12 @@
 package piscine
 
 func ToLower(s string) string {
-	var result string
-	for _, char := range s {
-		if char >= 'A' && char <= 'Z' {
-			result += string(char + 32)
+	result := ""
+	for _, ch := range s {
+		if ch >= 'A' && ch <= 'Z' {
+			result = result + string(ch-'A'+'a')
 		} else {
-			result += string(char)
+			result = result + string(ch)
 		}
 	}
 	return result
